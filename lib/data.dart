@@ -2,613 +2,789 @@
 import 'package:flutter/widgets.dart';
 
 const iconDefinitions = {
-  "_R_light":
-      Icon(IconData(0xE001, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_R": Icon(IconData(0xE001, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_argdown_light":
-      Icon(IconData(0xE003, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_argdown":
-      Icon(IconData(0xE003, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_asm_light":
-      Icon(IconData(0xE004, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_asm": Icon(IconData(0xE004, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_audio_light":
-      Icon(IconData(0xE005, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_audio":
-      Icon(IconData(0xE005, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_babel_light":
-      Icon(IconData(0xE006, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_babel":
-      Icon(IconData(0xE006, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_bower_light":
-      Icon(IconData(0xE007, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_bower":
-      Icon(IconData(0xE007, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_bsl_light":
-      Icon(IconData(0xE008, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_bsl": Icon(IconData(0xE008, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_c_light":
-      Icon(IconData(0xE00A, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_c": Icon(IconData(0xE00A, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_c-sharp_light":
-      Icon(IconData(0xE009, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_c-sharp":
-      Icon(IconData(0xE009, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_c_1_light":
-      Icon(IconData(0xE00A, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_c_1": Icon(IconData(0xE00A, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_c_2_light":
-      Icon(IconData(0xE00A, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_c_2": Icon(IconData(0xE00A, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_cake_light":
-      Icon(IconData(0xE00B, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_cake": Icon(IconData(0xE00B, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_cake_php_light":
-      Icon(IconData(0xE00C, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_cake_php":
-      Icon(IconData(0xE00C, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_clock_light":
-      Icon(IconData(0xE010, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_clock":
-      Icon(IconData(0xE010, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_clock_1_light":
-      Icon(IconData(0xE010, fontFamily: "Seti"), color: Color(0xff627379)),
-  "_clock_1":
-      Icon(IconData(0xE010, fontFamily: "Seti"), color: Color(0xff6d8086)),
-  "_clojure_light":
-      Icon(IconData(0xE011, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_clojure":
-      Icon(IconData(0xE011, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_clojure_1_light":
-      Icon(IconData(0xE011, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_clojure_1":
-      Icon(IconData(0xE011, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_code-climate_light":
-      Icon(IconData(0xE012, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_code-climate":
-      Icon(IconData(0xE012, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_coffee_light":
-      Icon(IconData(0xE013, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_coffee":
-      Icon(IconData(0xE013, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_coldfusion_light":
-      Icon(IconData(0xE015, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_coldfusion":
-      Icon(IconData(0xE015, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_config_light":
-      Icon(IconData(0xE016, fontFamily: "Seti"), color: Color(0xff627379)),
-  "_config":
-      Icon(IconData(0xE016, fontFamily: "Seti"), color: Color(0xff6d8086)),
-  "_cpp_light":
-      Icon(IconData(0xE017, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_cpp": Icon(IconData(0xE017, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_cpp_1_light":
-      Icon(IconData(0xE017, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_cpp_1":
-      Icon(IconData(0xE017, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_cpp_2_light":
-      Icon(IconData(0xE017, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_cpp_2":
-      Icon(IconData(0xE017, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_crystal_light":
-      Icon(IconData(0xE018, fontFamily: "Seti"), color: Color(0xffbfc2c1)),
-  "_crystal":
-      Icon(IconData(0xE018, fontFamily: "Seti"), color: Color(0xffd4d7d6)),
-  "_crystal_embedded_light":
-      Icon(IconData(0xE019, fontFamily: "Seti"), color: Color(0xffbfc2c1)),
-  "_crystal_embedded":
-      Icon(IconData(0xE019, fontFamily: "Seti"), color: Color(0xffd4d7d6)),
-  "_css_light":
-      Icon(IconData(0xE01A, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_css": Icon(IconData(0xE01A, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_csv_light":
-      Icon(IconData(0xE01B, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_csv": Icon(IconData(0xE01B, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_d_light":
-      Icon(IconData(0xE01C, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_d": Icon(IconData(0xE01C, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_dart_light":
-      Icon(IconData(0xE01D, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_dart": Icon(IconData(0xE01D, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_db_light":
-      Icon(IconData(0xE01E, fontFamily: "Seti"), color: Color(0xffdd4b78)),
-  "_db": Icon(IconData(0xE01E, fontFamily: "Seti"), color: Color(0xfff55385)),
-  "_default_light":
-      Icon(IconData(0xE01F, fontFamily: "Seti"), color: Color(0xffbfc2c1)),
-  "_default":
-      Icon(IconData(0xE01F, fontFamily: "Seti"), color: Color(0xffd4d7d6)),
-  "_docker_light":
-      Icon(IconData(0xE021, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_docker":
-      Icon(IconData(0xE021, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_docker_1_light":
-      Icon(IconData(0xE021, fontFamily: "Seti"), color: Color(0xff455155)),
-  "_docker_1":
-      Icon(IconData(0xE021, fontFamily: "Seti"), color: Color(0xff4d5a5e)),
-  "_docker_2_light":
-      Icon(IconData(0xE021, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_docker_2":
-      Icon(IconData(0xE021, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_docker_3_light":
-      Icon(IconData(0xE021, fontFamily: "Seti"), color: Color(0xffdd4b78)),
-  "_docker_3":
-      Icon(IconData(0xE021, fontFamily: "Seti"), color: Color(0xfff55385)),
-  "_ejs_light":
-      Icon(IconData(0xE023, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_ejs": Icon(IconData(0xE023, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_elixir_light":
-      Icon(IconData(0xE024, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_elixir":
-      Icon(IconData(0xE024, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_elixir_script_light":
-      Icon(IconData(0xE025, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_elixir_script":
-      Icon(IconData(0xE025, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_elm_light":
-      Icon(IconData(0xE026, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_elm": Icon(IconData(0xE026, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_eslint_light":
-      Icon(IconData(0xE028, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_eslint":
-      Icon(IconData(0xE028, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_eslint_1_light":
-      Icon(IconData(0xE028, fontFamily: "Seti"), color: Color(0xff455155)),
-  "_eslint_1":
-      Icon(IconData(0xE028, fontFamily: "Seti"), color: Color(0xff4d5a5e)),
-  "_ethereum_light":
-      Icon(IconData(0xE029, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_ethereum":
-      Icon(IconData(0xE029, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_f-sharp_light":
-      Icon(IconData(0xE02A, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_f-sharp":
-      Icon(IconData(0xE02A, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_favicon_light":
-      Icon(IconData(0xE02B, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_favicon":
-      Icon(IconData(0xE02B, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_firebase_light":
-      Icon(IconData(0xE02C, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_firebase":
-      Icon(IconData(0xE02C, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_firefox_light":
-      Icon(IconData(0xE02D, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_firefox":
-      Icon(IconData(0xE02D, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_font_light":
-      Icon(IconData(0xE02F, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_font": Icon(IconData(0xE02F, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_git_light":
-      Icon(IconData(0xE030, fontFamily: "Seti"), color: Color(0xff3b4b52)),
-  "_git": Icon(IconData(0xE030, fontFamily: "Seti"), color: Color(0xff41535b)),
-  "_go_light":
-      Icon(IconData(0xE034, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_go": Icon(IconData(0xE034, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_go2_light":
-      Icon(IconData(0xE035, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_go2": Icon(IconData(0xE035, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_gradle_light":
-      Icon(IconData(0xE036, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_gradle":
-      Icon(IconData(0xE036, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_grails_light":
-      Icon(IconData(0xE037, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_grails":
-      Icon(IconData(0xE037, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_graphql_light":
-      Icon(IconData(0xE038, fontFamily: "Seti"), color: Color(0xffdd4b78)),
-  "_graphql":
-      Icon(IconData(0xE038, fontFamily: "Seti"), color: Color(0xfff55385)),
-  "_grunt_light":
-      Icon(IconData(0xE039, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_grunt":
-      Icon(IconData(0xE039, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_gulp_light":
-      Icon(IconData(0xE03A, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_gulp": Icon(IconData(0xE03A, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_haml_light":
-      Icon(IconData(0xE03C, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_haml": Icon(IconData(0xE03C, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_happenings_light":
-      Icon(IconData(0xE03D, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_happenings":
-      Icon(IconData(0xE03D, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_haskell_light":
-      Icon(IconData(0xE03E, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_haskell":
-      Icon(IconData(0xE03E, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_haxe_light":
-      Icon(IconData(0xE03F, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_haxe": Icon(IconData(0xE03F, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_haxe_1_light":
-      Icon(IconData(0xE03F, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_haxe_1":
-      Icon(IconData(0xE03F, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_haxe_2_light":
-      Icon(IconData(0xE03F, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_haxe_2":
-      Icon(IconData(0xE03F, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_haxe_3_light":
-      Icon(IconData(0xE03F, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_haxe_3":
-      Icon(IconData(0xE03F, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_heroku_light":
-      Icon(IconData(0xE040, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_heroku":
-      Icon(IconData(0xE040, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_hex_light":
-      Icon(IconData(0xE041, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_hex": Icon(IconData(0xE041, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_html_light":
-      Icon(IconData(0xE042, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_html": Icon(IconData(0xE042, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_html_1_light":
-      Icon(IconData(0xE042, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_html_1":
-      Icon(IconData(0xE042, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_html_2_light":
-      Icon(IconData(0xE042, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_html_2":
-      Icon(IconData(0xE042, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_html_3_light":
-      Icon(IconData(0xE042, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_html_3":
-      Icon(IconData(0xE042, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_html_erb_light":
-      Icon(IconData(0xE043, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_html_erb":
-      Icon(IconData(0xE043, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_ignored_light":
-      Icon(IconData(0xE044, fontFamily: "Seti"), color: Color(0xff3b4b52)),
-  "_ignored":
-      Icon(IconData(0xE044, fontFamily: "Seti"), color: Color(0xff41535b)),
-  "_illustrator_light":
-      Icon(IconData(0xE045, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_illustrator":
-      Icon(IconData(0xE045, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_image_light":
-      Icon(IconData(0xE046, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_image":
-      Icon(IconData(0xE046, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_info_light":
-      Icon(IconData(0xE047, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_info": Icon(IconData(0xE047, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_ionic_light":
-      Icon(IconData(0xE048, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_ionic":
-      Icon(IconData(0xE048, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_jade_light":
-      Icon(IconData(0xE049, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_jade": Icon(IconData(0xE049, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_java_light":
-      Icon(IconData(0xE04A, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_java": Icon(IconData(0xE04A, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_javascript_light":
-      Icon(IconData(0xE04B, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_javascript":
-      Icon(IconData(0xE04B, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_javascript_1_light":
-      Icon(IconData(0xE04B, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_javascript_1":
-      Icon(IconData(0xE04B, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_javascript_2_light":
-      Icon(IconData(0xE04B, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_javascript_2":
-      Icon(IconData(0xE04B, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_jenkins_light":
-      Icon(IconData(0xE04C, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_jenkins":
-      Icon(IconData(0xE04C, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_jinja_light":
-      Icon(IconData(0xE04D, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_jinja":
-      Icon(IconData(0xE04D, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_json_light":
-      Icon(IconData(0xE04F, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_json": Icon(IconData(0xE04F, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_json_1_light":
-      Icon(IconData(0xE04F, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_json_1":
-      Icon(IconData(0xE04F, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_julia_light":
-      Icon(IconData(0xE050, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_julia":
-      Icon(IconData(0xE050, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_karma_light":
-      Icon(IconData(0xE051, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_karma":
-      Icon(IconData(0xE051, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_kotlin_light":
-      Icon(IconData(0xE052, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_kotlin":
-      Icon(IconData(0xE052, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_less_light":
-      Icon(IconData(0xE053, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_less": Icon(IconData(0xE053, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_license_light":
-      Icon(IconData(0xE054, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_license":
-      Icon(IconData(0xE054, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_license_1_light":
-      Icon(IconData(0xE054, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_license_1":
-      Icon(IconData(0xE054, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_license_2_light":
-      Icon(IconData(0xE054, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_license_2":
-      Icon(IconData(0xE054, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_liquid_light":
-      Icon(IconData(0xE055, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_liquid":
-      Icon(IconData(0xE055, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_livescript_light":
-      Icon(IconData(0xE056, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_livescript":
-      Icon(IconData(0xE056, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_lock_light":
-      Icon(IconData(0xE057, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_lock": Icon(IconData(0xE057, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_lua_light":
-      Icon(IconData(0xE058, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_lua": Icon(IconData(0xE058, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_makefile_light":
-      Icon(IconData(0xE059, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_makefile":
-      Icon(IconData(0xE059, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_makefile_1_light":
-      Icon(IconData(0xE059, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_makefile_1":
-      Icon(IconData(0xE059, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_makefile_2_light":
-      Icon(IconData(0xE059, fontFamily: "Seti"), color: Color(0xff627379)),
-  "_makefile_2":
-      Icon(IconData(0xE059, fontFamily: "Seti"), color: Color(0xff6d8086)),
-  "_makefile_3_light":
-      Icon(IconData(0xE059, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_makefile_3":
-      Icon(IconData(0xE059, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_markdown_light":
-      Icon(IconData(0xE05A, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_markdown":
-      Icon(IconData(0xE05A, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_maven_light":
-      Icon(IconData(0xE05B, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_maven":
-      Icon(IconData(0xE05B, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_mdo_light":
-      Icon(IconData(0xE05C, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_mdo": Icon(IconData(0xE05C, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_mustache_light":
-      Icon(IconData(0xE05D, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_mustache":
-      Icon(IconData(0xE05D, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_npm_light":
-      Icon(IconData(0xE05F, fontFamily: "Seti"), color: Color(0xff3b4b52)),
-  "_npm": Icon(IconData(0xE05F, fontFamily: "Seti"), color: Color(0xff41535b)),
-  "_npm_1_light":
-      Icon(IconData(0xE05F, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_npm_1":
-      Icon(IconData(0xE05F, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_npm_ignored_light":
-      Icon(IconData(0xE060, fontFamily: "Seti"), color: Color(0xff3b4b52)),
-  "_npm_ignored":
-      Icon(IconData(0xE060, fontFamily: "Seti"), color: Color(0xff41535b)),
-  "_nunjucks_light":
-      Icon(IconData(0xE061, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_nunjucks":
-      Icon(IconData(0xE061, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_ocaml_light":
-      Icon(IconData(0xE062, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_ocaml":
-      Icon(IconData(0xE062, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_odata_light":
-      Icon(IconData(0xE063, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_odata":
-      Icon(IconData(0xE063, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_pddl_light":
-      Icon(IconData(0xE064, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_pddl": Icon(IconData(0xE064, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_pdf_light":
-      Icon(IconData(0xE065, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_pdf": Icon(IconData(0xE065, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_perl_light":
-      Icon(IconData(0xE066, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_perl": Icon(IconData(0xE066, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_photoshop_light":
-      Icon(IconData(0xE067, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_photoshop":
-      Icon(IconData(0xE067, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_php_light":
-      Icon(IconData(0xE068, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_php": Icon(IconData(0xE068, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_plan_light":
-      Icon(IconData(0xE069, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_plan": Icon(IconData(0xE069, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_platformio_light":
-      Icon(IconData(0xE06A, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_platformio":
-      Icon(IconData(0xE06A, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_powershell_light":
-      Icon(IconData(0xE06B, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_powershell":
-      Icon(IconData(0xE06B, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_pug_light":
-      Icon(IconData(0xE06D, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_pug": Icon(IconData(0xE06D, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_puppet_light":
-      Icon(IconData(0xE06E, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_puppet":
-      Icon(IconData(0xE06E, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_python_light":
-      Icon(IconData(0xE06F, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_python":
-      Icon(IconData(0xE06F, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_react_light":
-      Icon(IconData(0xE071, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_react":
-      Icon(IconData(0xE071, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_react_1_light":
-      Icon(IconData(0xE071, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_react_1":
-      Icon(IconData(0xE071, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_react_2_light":
-      Icon(IconData(0xE071, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_react_2":
-      Icon(IconData(0xE071, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_reasonml_light":
-      Icon(IconData(0xE072, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_reasonml":
-      Icon(IconData(0xE072, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_rollup_light":
-      Icon(IconData(0xE073, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_rollup":
-      Icon(IconData(0xE073, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_ruby_light":
-      Icon(IconData(0xE074, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_ruby": Icon(IconData(0xE074, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_rust_light":
-      Icon(IconData(0xE075, fontFamily: "Seti"), color: Color(0xff627379)),
-  "_rust": Icon(IconData(0xE075, fontFamily: "Seti"), color: Color(0xff6d8086)),
-  "_salesforce_light":
-      Icon(IconData(0xE076, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_salesforce":
-      Icon(IconData(0xE076, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_sass_light":
-      Icon(IconData(0xE077, fontFamily: "Seti"), color: Color(0xffdd4b78)),
-  "_sass": Icon(IconData(0xE077, fontFamily: "Seti"), color: Color(0xfff55385)),
-  "_sbt_light":
-      Icon(IconData(0xE078, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_sbt": Icon(IconData(0xE078, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_scala_light":
-      Icon(IconData(0xE079, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_scala":
-      Icon(IconData(0xE079, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_shell_light":
-      Icon(IconData(0xE07C, fontFamily: "Seti"), color: Color(0xff455155)),
-  "_shell":
-      Icon(IconData(0xE07C, fontFamily: "Seti"), color: Color(0xff4d5a5e)),
-  "_slim_light":
-      Icon(IconData(0xE07D, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_slim": Icon(IconData(0xE07D, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_smarty_light":
-      Icon(IconData(0xE07E, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_smarty":
-      Icon(IconData(0xE07E, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_spring_light":
-      Icon(IconData(0xE07F, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_spring":
-      Icon(IconData(0xE07F, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_stylelint_light":
-      Icon(IconData(0xE080, fontFamily: "Seti"), color: Color(0xffbfc2c1)),
-  "_stylelint":
-      Icon(IconData(0xE080, fontFamily: "Seti"), color: Color(0xffd4d7d6)),
-  "_stylelint_1_light":
-      Icon(IconData(0xE080, fontFamily: "Seti"), color: Color(0xff455155)),
-  "_stylelint_1":
-      Icon(IconData(0xE080, fontFamily: "Seti"), color: Color(0xff4d5a5e)),
-  "_stylus_light":
-      Icon(IconData(0xE081, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_stylus":
-      Icon(IconData(0xE081, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_sublime_light":
-      Icon(IconData(0xE082, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_sublime":
-      Icon(IconData(0xE082, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_svg_light":
-      Icon(IconData(0xE083, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_svg": Icon(IconData(0xE083, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_svg_1_light":
-      Icon(IconData(0xE083, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_svg_1":
-      Icon(IconData(0xE083, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_swift_light":
-      Icon(IconData(0xE084, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_swift":
-      Icon(IconData(0xE084, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_terraform_light":
-      Icon(IconData(0xE085, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_terraform":
-      Icon(IconData(0xE085, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_tex_light":
-      Icon(IconData(0xE086, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_tex": Icon(IconData(0xE086, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_tex_1_light":
-      Icon(IconData(0xE086, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_tex_1":
-      Icon(IconData(0xE086, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_tex_2_light":
-      Icon(IconData(0xE086, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_tex_2":
-      Icon(IconData(0xE086, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_tex_3_light":
-      Icon(IconData(0xE086, fontFamily: "Seti"), color: Color(0xffbfc2c1)),
-  "_tex_3":
-      Icon(IconData(0xE086, fontFamily: "Seti"), color: Color(0xffd4d7d6)),
-  "_todo": Icon(IconData(0xE088, fontFamily: "Seti"), color: Color(0xff000000)),
-  "_tsconfig_light":
-      Icon(IconData(0xE089, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_tsconfig":
-      Icon(IconData(0xE089, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_twig_light":
-      Icon(IconData(0xE08A, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_twig": Icon(IconData(0xE08A, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_typescript_light":
-      Icon(IconData(0xE08B, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_typescript":
-      Icon(IconData(0xE08B, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_typescript_1_light":
-      Icon(IconData(0xE08B, fontFamily: "Seti"), color: Color(0xffb7b73b)),
-  "_typescript_1":
-      Icon(IconData(0xE08B, fontFamily: "Seti"), color: Color(0xffcbcb41)),
-  "_vala_light":
-      Icon(IconData(0xE08C, fontFamily: "Seti"), color: Color(0xff627379)),
-  "_vala": Icon(IconData(0xE08C, fontFamily: "Seti"), color: Color(0xff6d8086)),
-  "_video_light":
-      Icon(IconData(0xE08D, fontFamily: "Seti"), color: Color(0xffdd4b78)),
-  "_video":
-      Icon(IconData(0xE08D, fontFamily: "Seti"), color: Color(0xfff55385)),
-  "_vue_light":
-      Icon(IconData(0xE08E, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_vue": Icon(IconData(0xE08E, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_wasm_light":
-      Icon(IconData(0xE08F, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_wasm": Icon(IconData(0xE08F, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_wat_light":
-      Icon(IconData(0xE090, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_wat": Icon(IconData(0xE090, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_webpack_light":
-      Icon(IconData(0xE091, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_webpack":
-      Icon(IconData(0xE091, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_wgt_light":
-      Icon(IconData(0xE092, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_wgt": Icon(IconData(0xE092, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_windows_light":
-      Icon(IconData(0xE093, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_windows":
-      Icon(IconData(0xE093, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_word_light":
-      Icon(IconData(0xE094, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_word": Icon(IconData(0xE094, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_xls_light":
-      Icon(IconData(0xE095, fontFamily: "Seti"), color: Color(0xff7fae42)),
-  "_xls": Icon(IconData(0xE095, fontFamily: "Seti"), color: Color(0xff8dc149)),
-  "_xml_light":
-      Icon(IconData(0xE096, fontFamily: "Seti"), color: Color(0xffcc6d2e)),
-  "_xml": Icon(IconData(0xE096, fontFamily: "Seti"), color: Color(0xffe37933)),
-  "_yarn_light":
-      Icon(IconData(0xE097, fontFamily: "Seti"), color: Color(0xff498ba7)),
-  "_yarn": Icon(IconData(0xE097, fontFamily: "Seti"), color: Color(0xff519aba)),
-  "_yml_light":
-      Icon(IconData(0xE098, fontFamily: "Seti"), color: Color(0xff9068b0)),
-  "_yml": Icon(IconData(0xE098, fontFamily: "Seti"), color: Color(0xffa074c4)),
-  "_zip_light":
-      Icon(IconData(0xE099, fontFamily: "Seti"), color: Color(0xffb8383d)),
-  "_zip": Icon(IconData(0xE099, fontFamily: "Seti"), color: Color(0xffcc3e44)),
-  "_zip_1_light":
-      Icon(IconData(0xE099, fontFamily: "Seti"), color: Color(0xff627379)),
-  "_zip_1":
-      Icon(IconData(0xE099, fontFamily: "Seti"), color: Color(0xff6d8086)),
+  "_R_light": Icon(IconData(0xE001, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_R": Icon(IconData(0xE001, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_argdown_light": Icon(
+      IconData(0xE003, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_argdown": Icon(IconData(0xE003, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_asm_light": Icon(IconData(0xE004, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_asm": Icon(IconData(0xE004, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_audio_light": Icon(
+      IconData(0xE005, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_audio": Icon(IconData(0xE005, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_babel_light": Icon(
+      IconData(0xE006, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_babel": Icon(IconData(0xE006, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_bower_light": Icon(
+      IconData(0xE007, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_bower": Icon(IconData(0xE007, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_bsl_light": Icon(IconData(0xE008, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_bsl": Icon(IconData(0xE008, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_c_light": Icon(IconData(0xE00A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_c": Icon(IconData(0xE00A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_c-sharp_light": Icon(
+      IconData(0xE009, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_c-sharp": Icon(IconData(0xE009, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_c_1_light": Icon(IconData(0xE00A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_c_1": Icon(IconData(0xE00A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_c_2_light": Icon(IconData(0xE00A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_c_2": Icon(IconData(0xE00A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_cake_light": Icon(IconData(0xE00B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_cake": Icon(IconData(0xE00B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_cake_php_light": Icon(
+      IconData(0xE00C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_cake_php": Icon(IconData(0xE00C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_clock_light": Icon(
+      IconData(0xE010, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_clock": Icon(IconData(0xE010, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_clock_1_light": Icon(
+      IconData(0xE010, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff627379)),
+  "_clock_1": Icon(IconData(0xE010, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff6d8086)),
+  "_clojure_light": Icon(
+      IconData(0xE011, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_clojure": Icon(IconData(0xE011, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_clojure_1_light": Icon(
+      IconData(0xE011, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_clojure_1": Icon(IconData(0xE011, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_code-climate_light": Icon(
+      IconData(0xE012, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_code-climate": Icon(
+      IconData(0xE012, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_coffee_light": Icon(
+      IconData(0xE013, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_coffee": Icon(IconData(0xE013, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_coldfusion_light": Icon(
+      IconData(0xE015, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_coldfusion": Icon(IconData(0xE015, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_config_light": Icon(
+      IconData(0xE016, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff627379)),
+  "_config": Icon(IconData(0xE016, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff6d8086)),
+  "_cpp_light": Icon(IconData(0xE017, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_cpp": Icon(IconData(0xE017, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_cpp_1_light": Icon(
+      IconData(0xE017, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_cpp_1": Icon(IconData(0xE017, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_cpp_2_light": Icon(
+      IconData(0xE017, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_cpp_2": Icon(IconData(0xE017, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_crystal_light": Icon(
+      IconData(0xE018, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffbfc2c1)),
+  "_crystal": Icon(IconData(0xE018, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffd4d7d6)),
+  "_crystal_embedded_light": Icon(
+      IconData(0xE019, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffbfc2c1)),
+  "_crystal_embedded": Icon(
+      IconData(0xE019, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffd4d7d6)),
+  "_css_light": Icon(IconData(0xE01A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_css": Icon(IconData(0xE01A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_csv_light": Icon(IconData(0xE01B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_csv": Icon(IconData(0xE01B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_d_light": Icon(IconData(0xE01C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_d": Icon(IconData(0xE01C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_dart_light": Icon(IconData(0xE01D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_dart": Icon(IconData(0xE01D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_db_light": Icon(IconData(0xE01E, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffdd4b78)),
+  "_db": Icon(IconData(0xE01E, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xfff55385)),
+  "_default_light": Icon(
+      IconData(0xE01F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffbfc2c1)),
+  "_default": Icon(IconData(0xE01F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffd4d7d6)),
+  "_docker_light": Icon(
+      IconData(0xE021, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_docker": Icon(IconData(0xE021, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_docker_1_light": Icon(
+      IconData(0xE021, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff455155)),
+  "_docker_1": Icon(IconData(0xE021, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff4d5a5e)),
+  "_docker_2_light": Icon(
+      IconData(0xE021, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_docker_2": Icon(IconData(0xE021, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_docker_3_light": Icon(
+      IconData(0xE021, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffdd4b78)),
+  "_docker_3": Icon(IconData(0xE021, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xfff55385)),
+  "_ejs_light": Icon(IconData(0xE023, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_ejs": Icon(IconData(0xE023, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_elixir_light": Icon(
+      IconData(0xE024, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_elixir": Icon(IconData(0xE024, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_elixir_script_light": Icon(
+      IconData(0xE025, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_elixir_script": Icon(
+      IconData(0xE025, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_elm_light": Icon(IconData(0xE026, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_elm": Icon(IconData(0xE026, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_eslint_light": Icon(
+      IconData(0xE028, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_eslint": Icon(IconData(0xE028, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_eslint_1_light": Icon(
+      IconData(0xE028, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff455155)),
+  "_eslint_1": Icon(IconData(0xE028, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff4d5a5e)),
+  "_ethereum_light": Icon(
+      IconData(0xE029, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_ethereum": Icon(IconData(0xE029, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_f-sharp_light": Icon(
+      IconData(0xE02A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_f-sharp": Icon(IconData(0xE02A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_favicon_light": Icon(
+      IconData(0xE02B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_favicon": Icon(IconData(0xE02B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_firebase_light": Icon(
+      IconData(0xE02C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_firebase": Icon(IconData(0xE02C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_firefox_light": Icon(
+      IconData(0xE02D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_firefox": Icon(IconData(0xE02D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_font_light": Icon(IconData(0xE02F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_font": Icon(IconData(0xE02F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_git_light": Icon(IconData(0xE030, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff3b4b52)),
+  "_git": Icon(IconData(0xE030, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff41535b)),
+  "_go_light": Icon(IconData(0xE034, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_go": Icon(IconData(0xE034, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_go2_light": Icon(IconData(0xE035, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_go2": Icon(IconData(0xE035, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_gradle_light": Icon(
+      IconData(0xE036, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_gradle": Icon(IconData(0xE036, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_grails_light": Icon(
+      IconData(0xE037, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_grails": Icon(IconData(0xE037, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_graphql_light": Icon(
+      IconData(0xE038, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffdd4b78)),
+  "_graphql": Icon(IconData(0xE038, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xfff55385)),
+  "_grunt_light": Icon(
+      IconData(0xE039, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_grunt": Icon(IconData(0xE039, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_gulp_light": Icon(IconData(0xE03A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_gulp": Icon(IconData(0xE03A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_haml_light": Icon(IconData(0xE03C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_haml": Icon(IconData(0xE03C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_happenings_light": Icon(
+      IconData(0xE03D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_happenings": Icon(IconData(0xE03D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_haskell_light": Icon(
+      IconData(0xE03E, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_haskell": Icon(IconData(0xE03E, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_haxe_light": Icon(IconData(0xE03F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_haxe": Icon(IconData(0xE03F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_haxe_1_light": Icon(
+      IconData(0xE03F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_haxe_1": Icon(IconData(0xE03F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_haxe_2_light": Icon(
+      IconData(0xE03F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_haxe_2": Icon(IconData(0xE03F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_haxe_3_light": Icon(
+      IconData(0xE03F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_haxe_3": Icon(IconData(0xE03F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_heroku_light": Icon(
+      IconData(0xE040, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_heroku": Icon(IconData(0xE040, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_hex_light": Icon(IconData(0xE041, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_hex": Icon(IconData(0xE041, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_html_light": Icon(IconData(0xE042, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_html": Icon(IconData(0xE042, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_html_1_light": Icon(
+      IconData(0xE042, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_html_1": Icon(IconData(0xE042, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_html_2_light": Icon(
+      IconData(0xE042, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_html_2": Icon(IconData(0xE042, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_html_3_light": Icon(
+      IconData(0xE042, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_html_3": Icon(IconData(0xE042, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_html_erb_light": Icon(
+      IconData(0xE043, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_html_erb": Icon(IconData(0xE043, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_ignored_light": Icon(
+      IconData(0xE044, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff3b4b52)),
+  "_ignored": Icon(IconData(0xE044, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff41535b)),
+  "_illustrator_light": Icon(
+      IconData(0xE045, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_illustrator": Icon(
+      IconData(0xE045, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_image_light": Icon(
+      IconData(0xE046, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_image": Icon(IconData(0xE046, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_info_light": Icon(IconData(0xE047, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_info": Icon(IconData(0xE047, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_ionic_light": Icon(
+      IconData(0xE048, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_ionic": Icon(IconData(0xE048, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_jade_light": Icon(IconData(0xE049, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_jade": Icon(IconData(0xE049, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_java_light": Icon(IconData(0xE04A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_java": Icon(IconData(0xE04A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_javascript_light": Icon(
+      IconData(0xE04B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_javascript": Icon(IconData(0xE04B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_javascript_1_light": Icon(
+      IconData(0xE04B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_javascript_1": Icon(
+      IconData(0xE04B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_javascript_2_light": Icon(
+      IconData(0xE04B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_javascript_2": Icon(
+      IconData(0xE04B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_jenkins_light": Icon(
+      IconData(0xE04C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_jenkins": Icon(IconData(0xE04C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_jinja_light": Icon(
+      IconData(0xE04D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_jinja": Icon(IconData(0xE04D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_json_light": Icon(IconData(0xE04F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_json": Icon(IconData(0xE04F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_json_1_light": Icon(
+      IconData(0xE04F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_json_1": Icon(IconData(0xE04F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_julia_light": Icon(
+      IconData(0xE050, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_julia": Icon(IconData(0xE050, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_karma_light": Icon(
+      IconData(0xE051, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_karma": Icon(IconData(0xE051, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_kotlin_light": Icon(
+      IconData(0xE052, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_kotlin": Icon(IconData(0xE052, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_less_light": Icon(IconData(0xE053, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_less": Icon(IconData(0xE053, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_license_light": Icon(
+      IconData(0xE054, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_license": Icon(IconData(0xE054, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_license_1_light": Icon(
+      IconData(0xE054, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_license_1": Icon(IconData(0xE054, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_license_2_light": Icon(
+      IconData(0xE054, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_license_2": Icon(IconData(0xE054, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_liquid_light": Icon(
+      IconData(0xE055, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_liquid": Icon(IconData(0xE055, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_livescript_light": Icon(
+      IconData(0xE056, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_livescript": Icon(IconData(0xE056, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_lock_light": Icon(IconData(0xE057, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_lock": Icon(IconData(0xE057, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_lua_light": Icon(IconData(0xE058, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_lua": Icon(IconData(0xE058, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_makefile_light": Icon(
+      IconData(0xE059, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_makefile": Icon(IconData(0xE059, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_makefile_1_light": Icon(
+      IconData(0xE059, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_makefile_1": Icon(IconData(0xE059, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_makefile_2_light": Icon(
+      IconData(0xE059, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff627379)),
+  "_makefile_2": Icon(IconData(0xE059, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff6d8086)),
+  "_makefile_3_light": Icon(
+      IconData(0xE059, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_makefile_3": Icon(IconData(0xE059, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_markdown_light": Icon(
+      IconData(0xE05A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_markdown": Icon(IconData(0xE05A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_maven_light": Icon(
+      IconData(0xE05B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_maven": Icon(IconData(0xE05B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_mdo_light": Icon(IconData(0xE05C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_mdo": Icon(IconData(0xE05C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_mustache_light": Icon(
+      IconData(0xE05D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_mustache": Icon(IconData(0xE05D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_npm_light": Icon(IconData(0xE05F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff3b4b52)),
+  "_npm": Icon(IconData(0xE05F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff41535b)),
+  "_npm_1_light": Icon(
+      IconData(0xE05F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_npm_1": Icon(IconData(0xE05F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_npm_ignored_light": Icon(
+      IconData(0xE060, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff3b4b52)),
+  "_npm_ignored": Icon(
+      IconData(0xE060, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff41535b)),
+  "_nunjucks_light": Icon(
+      IconData(0xE061, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_nunjucks": Icon(IconData(0xE061, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_ocaml_light": Icon(
+      IconData(0xE062, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_ocaml": Icon(IconData(0xE062, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_odata_light": Icon(
+      IconData(0xE063, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_odata": Icon(IconData(0xE063, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_pddl_light": Icon(IconData(0xE064, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_pddl": Icon(IconData(0xE064, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_pdf_light": Icon(IconData(0xE065, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_pdf": Icon(IconData(0xE065, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_perl_light": Icon(IconData(0xE066, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_perl": Icon(IconData(0xE066, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_photoshop_light": Icon(
+      IconData(0xE067, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_photoshop": Icon(IconData(0xE067, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_php_light": Icon(IconData(0xE068, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_php": Icon(IconData(0xE068, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_plan_light": Icon(IconData(0xE069, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_plan": Icon(IconData(0xE069, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_platformio_light": Icon(
+      IconData(0xE06A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_platformio": Icon(IconData(0xE06A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_powershell_light": Icon(
+      IconData(0xE06B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_powershell": Icon(IconData(0xE06B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_pug_light": Icon(IconData(0xE06D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_pug": Icon(IconData(0xE06D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_puppet_light": Icon(
+      IconData(0xE06E, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_puppet": Icon(IconData(0xE06E, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_python_light": Icon(
+      IconData(0xE06F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_python": Icon(IconData(0xE06F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_react_light": Icon(
+      IconData(0xE071, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_react": Icon(IconData(0xE071, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_react_1_light": Icon(
+      IconData(0xE071, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_react_1": Icon(IconData(0xE071, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_react_2_light": Icon(
+      IconData(0xE071, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_react_2": Icon(IconData(0xE071, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_reasonml_light": Icon(
+      IconData(0xE072, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_reasonml": Icon(IconData(0xE072, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_rollup_light": Icon(
+      IconData(0xE073, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_rollup": Icon(IconData(0xE073, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_ruby_light": Icon(IconData(0xE074, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_ruby": Icon(IconData(0xE074, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_rust_light": Icon(IconData(0xE075, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff627379)),
+  "_rust": Icon(IconData(0xE075, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff6d8086)),
+  "_salesforce_light": Icon(
+      IconData(0xE076, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_salesforce": Icon(IconData(0xE076, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_sass_light": Icon(IconData(0xE077, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffdd4b78)),
+  "_sass": Icon(IconData(0xE077, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xfff55385)),
+  "_sbt_light": Icon(IconData(0xE078, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_sbt": Icon(IconData(0xE078, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_scala_light": Icon(
+      IconData(0xE079, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_scala": Icon(IconData(0xE079, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_shell_light": Icon(
+      IconData(0xE07C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff455155)),
+  "_shell": Icon(IconData(0xE07C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff4d5a5e)),
+  "_slim_light": Icon(IconData(0xE07D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_slim": Icon(IconData(0xE07D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_smarty_light": Icon(
+      IconData(0xE07E, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_smarty": Icon(IconData(0xE07E, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_spring_light": Icon(
+      IconData(0xE07F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_spring": Icon(IconData(0xE07F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_stylelint_light": Icon(
+      IconData(0xE080, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffbfc2c1)),
+  "_stylelint": Icon(IconData(0xE080, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffd4d7d6)),
+  "_stylelint_1_light": Icon(
+      IconData(0xE080, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff455155)),
+  "_stylelint_1": Icon(
+      IconData(0xE080, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff4d5a5e)),
+  "_stylus_light": Icon(
+      IconData(0xE081, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_stylus": Icon(IconData(0xE081, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_sublime_light": Icon(
+      IconData(0xE082, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_sublime": Icon(IconData(0xE082, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_svg_light": Icon(IconData(0xE083, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_svg": Icon(IconData(0xE083, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_svg_1_light": Icon(
+      IconData(0xE083, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_svg_1": Icon(IconData(0xE083, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_swift_light": Icon(
+      IconData(0xE084, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_swift": Icon(IconData(0xE084, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_terraform_light": Icon(
+      IconData(0xE085, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_terraform": Icon(IconData(0xE085, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_tex_light": Icon(IconData(0xE086, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_tex": Icon(IconData(0xE086, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_tex_1_light": Icon(
+      IconData(0xE086, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_tex_1": Icon(IconData(0xE086, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_tex_2_light": Icon(
+      IconData(0xE086, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_tex_2": Icon(IconData(0xE086, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_tex_3_light": Icon(
+      IconData(0xE086, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffbfc2c1)),
+  "_tex_3": Icon(IconData(0xE086, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffd4d7d6)),
+  "_todo": Icon(IconData(0xE088, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff000000)),
+  "_tsconfig_light": Icon(
+      IconData(0xE089, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_tsconfig": Icon(IconData(0xE089, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_twig_light": Icon(IconData(0xE08A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_twig": Icon(IconData(0xE08A, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_typescript_light": Icon(
+      IconData(0xE08B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_typescript": Icon(IconData(0xE08B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_typescript_1_light": Icon(
+      IconData(0xE08B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb7b73b)),
+  "_typescript_1": Icon(
+      IconData(0xE08B, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcbcb41)),
+  "_vala_light": Icon(IconData(0xE08C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff627379)),
+  "_vala": Icon(IconData(0xE08C, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff6d8086)),
+  "_video_light": Icon(
+      IconData(0xE08D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffdd4b78)),
+  "_video": Icon(IconData(0xE08D, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xfff55385)),
+  "_vue_light": Icon(IconData(0xE08E, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_vue": Icon(IconData(0xE08E, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_wasm_light": Icon(IconData(0xE08F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_wasm": Icon(IconData(0xE08F, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_wat_light": Icon(IconData(0xE090, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_wat": Icon(IconData(0xE090, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_webpack_light": Icon(
+      IconData(0xE091, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_webpack": Icon(IconData(0xE091, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_wgt_light": Icon(IconData(0xE092, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_wgt": Icon(IconData(0xE092, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_windows_light": Icon(
+      IconData(0xE093, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_windows": Icon(IconData(0xE093, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_word_light": Icon(IconData(0xE094, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_word": Icon(IconData(0xE094, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_xls_light": Icon(IconData(0xE095, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff7fae42)),
+  "_xls": Icon(IconData(0xE095, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff8dc149)),
+  "_xml_light": Icon(IconData(0xE096, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc6d2e)),
+  "_xml": Icon(IconData(0xE096, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffe37933)),
+  "_yarn_light": Icon(IconData(0xE097, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff498ba7)),
+  "_yarn": Icon(IconData(0xE097, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff519aba)),
+  "_yml_light": Icon(IconData(0xE098, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff9068b0)),
+  "_yml": Icon(IconData(0xE098, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffa074c4)),
+  "_zip_light": Icon(IconData(0xE099, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffb8383d)),
+  "_zip": Icon(IconData(0xE099, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xffcc3e44)),
+  "_zip_1_light": Icon(
+      IconData(0xE099, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff627379)),
+  "_zip_1": Icon(IconData(0xE099, fontFamily: "Seti", fontPackage: "seti"),
+      color: Color(0xff6d8086)),
 };
 const setiMeta = {
   "extensions": {

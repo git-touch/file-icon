@@ -33,7 +33,7 @@ import 'package:flutter/widgets.dart';
         (entry.value['fontCharacter'] as String).replaceFirst('\\', '0x');
     var colorValue = convertColor(entry.value['fontColor']);
     code +=
-        '"${entry.key}": Icon(IconData($codePoint, fontFamily: "Seti"), color: Color($colorValue)),';
+        '"${entry.key}": Icon(IconData($codePoint, fontFamily: "Seti", fontPackage: "seti"), color: Color($colorValue)),';
   }
   code += '};';
 
