@@ -1,12 +1,3 @@
-# seti-flutter
-
-[![pub](https://img.shields.io/pub/v/seti)](https://pub.dev/packages/seti)
-
-[Seti file icons](https://github.com/jesseweed/seti-ui#current-icons) for Flutter. Show file icon for different file types.
-
-## Usage
-
-```dart
 import 'package:flutter/widgets.dart';
 import 'package:seti/seti.dart';
 
@@ -25,8 +16,3 @@ class MyWidget extends StatelessWidget {
     );
   }
 }
-```
-
-## License
-
-MIT
