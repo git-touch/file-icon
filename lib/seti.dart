@@ -16,7 +16,11 @@ class SetiIcon extends StatelessWidget {
     if (setiNameMap.containsKey(fileName)) {
       key = setiNameMap[fileName];
     } else {
-      var ext = fileName.split('.').last; // FIXME:
+      /// Strictly we should traverse all extensions and call [endsWith] to test file name,
+      /// which may causes performance issue
+      /// So we just remove first part of split strings instead
+      var ext = fileName.split('.').sublist(1).join('.');
+
       if (setiExtensionMap.containsKey(ext)) {
         key = setiExtensionMap[ext];
       }
