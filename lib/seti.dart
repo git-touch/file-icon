@@ -23,11 +23,14 @@ class SetiIcon extends StatelessWidget {
       }
     }
 
-    if (key == null) return null;
+    if (key == null) {
+      key = light ? '_default_light' : '_default';
+    }
 
     var m = iconDefinitions[key];
     return Icon(
       IconData(m.codePoint, fontFamily: 'Seti', fontPackage: 'seti'),
+      color: m.color,
       size: size,
     );
   }
