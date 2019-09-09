@@ -11,20 +11,22 @@ class SetiIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final meta = light ? setiLightMeta : setiMeta;
     String key;
 
-    if (meta['names'].containsKey(fileName)) {
-      key = meta['names'][fileName];
+    if (setiMeta['names'].containsKey(fileName)) {
+      key = setiMeta['names'][fileName];
     } else {
-      var ext = fileName.split('.').last;
-      if (meta['extensions'].containsKey(ext)) {
-        key = meta['extensions'][ext];
+      var ext = fileName.split('.').last; // FIXME:
+      if (setiMeta['extensions'].containsKey(ext)) {
+        key = setiMeta['extensions'][ext];
       }
     }
 
     if (key == null) {
-      key = light ? '_default_light' : '_default';
+      key = '_default';
+    }
+    if (light) {
+      key = key + '_light';
     }
 
     var m = iconDefinitions[key];

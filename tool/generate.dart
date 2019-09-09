@@ -41,11 +41,5 @@ import 'meta.dart';
       {'extensions': data['fileExtensions'], 'names': data['fileNames']});
   code += 'const setiMeta = $metaString;';
 
-  var lightString = json.encode({
-    'extensions': data['light']['fileExtensions'],
-    'names': data['light']['fileNames']
-  });
-  code += 'const setiLightMeta = $lightString;';
-
   await File('./lib/data.dart').writeAsString(DartFormatter().format(code));
 }
