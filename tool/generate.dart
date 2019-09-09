@@ -5,9 +5,7 @@ import 'package:http/http.dart' as http;
 
 // #123, #112233 -> 0xff112233
 String convertColor(String cssHex) {
-  if (cssHex == null) {
-    return '0xff000000'; // FIXME:
-  }
+  if (cssHex == null) return null;
 
   if (cssHex.startsWith('#')) {
     cssHex = cssHex.substring(1);
@@ -20,7 +18,6 @@ String convertColor(String cssHex) {
 
 main(List<String> args) async {
   var code = '''// GENERATED CODE - DO NOT MODIFY BY HAND
-import 'dart:ui';
 import 'meta.dart';
 ''';
 
@@ -29,17 +26,27 @@ import 'meta.dart';
   var data = json.decode(res.body);
 
   code += 'const iconDefinitions = {';
+  // List<SetiMeta> items;
+  data['iconDefinitions'].forEach((String k, v) {
+    if (k.endsWith('_light')) {
+      var noLightKey = k.substring(0, k.length - 6);
+      data['iconDefinitions'][noLightKey]['fontColorLight'] = v['fontColor'];
+    }
+  });
+
   for (var entry in data['iconDefinitions'].entries) {
+    if (entry.key.endsWith('_light')) continue;
+
     var codePoint =
         (entry.value['fontCharacter'] as String).replaceFirst('\\', '0x');
-    var colorValue = convertColor(entry.value['fontColor']);
-    code += '"${entry.key}": SetiMeta($codePoint, Color($colorValue)),';
+    var color = convertColor(entry.value['fontColor']);
+    var lightColor = convertColor(entry.value['fontColorLight']);
+    code += '"${entry.key}": SetiMeta($codePoint, $color, $lightColor),';
   }
   code += '};';
 
-  var metaString = json.encode(
-      {'extensions': data['fileExtensions'], 'names': data['fileNames']});
-  code += 'const setiMeta = $metaString;';
+  code += 'const setiNameMap = ${json.encode(data['fileNames'])};';
+  code += 'const setiExtensionMap = ${json.encode(data['fileExtensions'])};';
 
   await File('./lib/data.dart').writeAsString(DartFormatter().format(code));
 }

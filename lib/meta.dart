@@ -1,8 +1,7 @@
-import 'dart:ui';
-
 class SetiMeta {
-  final Color color;
   final int codePoint;
+  final int color;
+  final int lightColor;
 
-  const SetiMeta(this.codePoint, this.color);
+  const SetiMeta(this.codePoint, this.color, this.lightColor);
 }

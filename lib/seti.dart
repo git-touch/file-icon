@@ -13,26 +13,26 @@ class SetiIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     String key;
 
-    if (setiMeta['names'].containsKey(fileName)) {
-      key = setiMeta['names'][fileName];
+    if (setiNameMap.containsKey(fileName)) {
+      key = setiNameMap[fileName];
     } else {
       var ext = fileName.split('.').last; // FIXME:
-      if (setiMeta['extensions'].containsKey(ext)) {
-        key = setiMeta['extensions'][ext];
+      if (setiExtensionMap.containsKey(ext)) {
+        key = setiExtensionMap[ext];
       }
     }
 
     if (key == null) {
       key = '_default';
     }
-    if (light) {
-      key = key + '_light';
-    }
 
-    var m = iconDefinitions[key];
+    final m = iconDefinitions[key];
+    // FIXME: default color
+    final colorValue = (light ? m.lightColor : m.color) ?? 0xff000000;
+
     return Icon(
       IconData(m.codePoint, fontFamily: 'Seti', fontPackage: 'seti'),
-      color: m.color,
+      color: Color(colorValue),
       size: size,
     );
   }
