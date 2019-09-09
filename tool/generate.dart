@@ -20,7 +20,8 @@ String convertColor(String cssHex) {
 
 main(List<String> args) async {
   var code = '''// GENERATED CODE - DO NOT MODIFY BY HAND
-import 'package:flutter/widgets.dart';
+import 'dart:ui';
+import 'meta.dart';
 ''';
 
   var res = await http.get(
@@ -32,8 +33,7 @@ import 'package:flutter/widgets.dart';
     var codePoint =
         (entry.value['fontCharacter'] as String).replaceFirst('\\', '0x');
     var colorValue = convertColor(entry.value['fontColor']);
-    code +=
-        '"${entry.key}": Icon(IconData($codePoint, fontFamily: "Seti", fontPackage: "seti"), color: Color($colorValue)),';
+    code += '"${entry.key}": SetiMeta($codePoint, Color($colorValue)),';
   }
   code += '};';
 
