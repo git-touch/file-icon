@@ -18,3 +18,7 @@ dev_dependencies:
   dart_style: ^1.2.10
 
 flutter:
+  fonts:
+    - family: Seti
+      fonts:
+        - asset: fonts/seti.ttf
