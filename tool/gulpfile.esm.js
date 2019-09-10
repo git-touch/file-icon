@@ -10,7 +10,8 @@ function gallery() {
           file.contents = Buffer.from(
             file.contents
               .toString()
-              .replace("package:flutter", "package:flutter_web"),
+              .replace("package:flutter", "package:flutter_web")
+              .replace("fontPackage: 'seti'", ""),
             "utf8"
           );
         }
