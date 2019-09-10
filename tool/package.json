@@ -1,0 +1,11 @@
+{
+  "name": "tool",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "gulp": "^4.0.2"
+  }
+}
