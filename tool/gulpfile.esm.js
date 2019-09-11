@@ -5,6 +5,7 @@
 import fs from "fs";
 import gulp from "gulp";
 import through2 from "through2";
+import { execSync } from "child_process";
 
 /**
  * @param {string} key
@@ -43,7 +44,7 @@ function copyFont() {
     .pipe(gulp.dest("../seti/fonts"));
 }
 
-function generateData() {
+function generateCode() {
   const mappingLess = fs.readFileSync(
     "../vendor/seti-ui/styles/components/icons/mapping.less",
     "utf8"
@@ -53,8 +54,8 @@ function generateData() {
   // Taken from https://github.com/microsoft/vscode/blob/ae42e42cf10df59773851b2d69db08189d6989eb/extensions/theme-seti/build/update-icon-theme.js#L302
   const reg = /\.icon-(?:set|partial)\(['"]([\w-\.]+)['"],\s*['"]([\w-]+)['"],\s*(@[\w-]+)\)/g;
 
-  const endMap = {};
-  const containMap = {};
+  const iconSetMap = {};
+  const partialMap = {};
 
   let result;
   while ((result = reg.exec(mappingLess))) {
@@ -64,22 +65,22 @@ function generateData() {
 
     if (arr[0].startsWith(".icon-set")) {
       const key = arr[0].trim().slice(11, -1);
-      if (endMap[key.toLowerCase()]) {
+      if (iconSetMap[key.toLowerCase()]) {
         console.warn(`Duplicated key: ${key}`);
       }
-      endMap[key.toLowerCase()] = { type, color };
+      iconSetMap[key.toLowerCase()] = { type, color };
     } else if (arr[0].startsWith(".icon-partial")) {
       const key = arr[0].trim().slice(15, -1);
-      if (containMap[key.toLowerCase()]) {
+      if (iconSetMap[key.toLowerCase()]) {
         console.warn(`Duplicated key: ${key}`);
       }
-      containMap[key.toLowerCase()] = { type, color };
+      iconSetMap[key.toLowerCase()] = { type, color };
     } else {
       throw new Error("should not be here");
     }
   }
-  // console.log(endMap);
-  // console.log(containMap);
+  // console.log(iconSetMap);
+  // console.log(partialMap);
 
   // Code points
   const codePoints = fs
@@ -139,7 +140,7 @@ function generateData() {
   // console.log(colors);
 
   // Generate code: data.dart
-  let code = "// GENERATED CODE - DO NOT MODIFY BY HAND\nimport 'meta.dart';\n";
+  let code = "// GENERATED CODE - DO NOT MODIFY BY HAND\nimport 'meta.dart';";
   codePoints.forEach(({ type, codePoint }) => {
     code += `const ${getCodePointVarName(type)} = ${codePoint};\n`;
   });
@@ -148,21 +149,21 @@ function generateData() {
   });
   code += `const _seti_primary = _blue;`;
 
-  code += `const endMap = {`;
-  Object.entries(endMap).forEach(([k, v]) => {
-    code += `'${k}': [${getCodePointVarName(v.type)}, ${getColorVarName(
+  code += `const iconSetMap = {`;
+  Object.entries(iconSetMap).forEach(([k, v]) => {
+    code += `'${k}': SetiMeta(${getCodePointVarName(v.type)}, ${getColorVarName(
       v.color
-    )}],`;
+    )}),`;
   });
   code += "};";
 
-  code += `const containMap = {`;
-  Object.entries(containMap).forEach(([k, v]) => {
-    code += `'${k}': [${getCodePointVarName(v.type)}, ${getColorVarName(
-      v.color
-    )}],`;
-  });
-  code += "};";
+  // code += `const partialMap = {`;
+  // Object.entries(partialMap).forEach(([k, v]) => {
+  //   code += `'${k}': [${getCodePointVarName(v.type)}, ${getColorVarName(
+  //     v.color
+  //   )}],`;
+  // });
+  // code += "};";
 
   fs.writeFileSync("../seti/lib/data.dart", code);
 }
@@ -177,7 +178,7 @@ function copyLibToWeb() {
             file.contents
               .toString()
               .replace("package:flutter", "package:flutter_web")
-              .replace("fontPackage: 'seti'", ""),
+              .replace("fontPackage: 'seti',", ""),
             "utf8"
           );
         }
@@ -188,17 +189,13 @@ function copyLibToWeb() {
 }
 
 export function watch(cb) {
-  gulp.watch(
-    "../vendor/seti-ui/styles/_fonts/seti/seti.ttf",
-    { ignoreInitial: false },
-    copyFont
-  );
   gulp.watch("../seti/lib/**/*", { ignoreInitial: false }, copyLibToWeb);
   cb();
 }
 
 export default cb => {
+  copyFont();
+  generateCode();
   copyLibToWeb();
-  generateData();
   cb();
 };
