@@ -1,3 +1,7 @@
+// References:
+// https://github.com/microsoft/vscode/blob/master/extensions/theme-seti/build/update-icon-theme.js
+// https://github.com/microsoft/vscode/blob/master/extensions/theme-seti/icons/vs-seti-icon-theme.json
+
 import fs from "fs";
 import gulp from "gulp";
 import through2 from "through2";
@@ -6,14 +10,14 @@ import through2 from "through2";
  * @param {string} key
  */
 function getCodePointVarName(key) {
-  return `_code_${key.replace("-", "_")}`;
+  return `_${key.toLowerCase().replace("-", "_")}`;
 }
 
 /**
  * @param {string} key
  */
 function getColorVarName(key) {
-  return `_${key.replace("-", "_")}`;
+  return `_${key.toLowerCase().replace("-", "_")}`;
 }
 
 /**
@@ -59,9 +63,17 @@ function generateData() {
     const color = arr[2].trim().slice(1, -1);
 
     if (arr[0].startsWith(".icon-set")) {
-      endMap[arr[0].trim().slice(11, -1)] = { type, color };
+      const key = arr[0].trim().slice(11, -1);
+      if (endMap[key.toLowerCase()]) {
+        console.warn(`Duplicated key: ${key}`);
+      }
+      endMap[key.toLowerCase()] = { type, color };
     } else if (arr[0].startsWith(".icon-partial")) {
-      containMap[arr[0].trim().slice(15, -1)] = { type, color };
+      const key = arr[0].trim().slice(15, -1);
+      if (containMap[key.toLowerCase()]) {
+        console.warn(`Duplicated key: ${key}`);
+      }
+      containMap[key.toLowerCase()] = { type, color };
     } else {
       throw new Error("should not be here");
     }
@@ -88,7 +100,7 @@ function generateData() {
       return { type, codePoint };
     })
     .filter(x => x);
-  console.log(codePoints);
+  // console.log(codePoints);
 
   // Colors
   const colorPresets = [
