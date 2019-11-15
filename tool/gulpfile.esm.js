@@ -168,11 +168,6 @@ function generateCode() {
   fs.writeFileSync("../seti/lib/data.dart", code);
 }
 
-export function watch(cb) {
-  gulp.watch("../seti/lib/**/*", { ignoreInitial: false }, copyLibToWeb);
-  cb();
-}
-
 export default cb => {
   copyFont();
   generateCode();
