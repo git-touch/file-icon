@@ -175,17 +175,14 @@ function copyLibToWeb() {
       through2.obj((file, _, cb) => {
         if (file.isBuffer()) {
           file.contents = Buffer.from(
-            file.contents
-              .toString()
-              .replace("package:flutter", "package:flutter_web")
-              .replace("fontPackage: 'seti',", ""),
+            file.contents.toString().replace("fontPackage: 'seti',", ""),
             "utf8"
           );
         }
         cb(null, file);
       })
     )
-    .pipe(gulp.dest("../seti-gallery/lib/generated"));
+    .pipe(gulp.dest("../seti/example/lib/generated"));
 }
 
 export function watch(cb) {
