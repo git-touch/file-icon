@@ -1,6 +1,6 @@
-import 'dart:html' as html;
 import 'package:flutter/material.dart';
 import 'package:seti/seti.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
           InkWell(
             child: SetiIcon('.html', size: 32),
             onTap: () {
-              html.window.open('https://github.com/pd4d10/seti-flutter', '');
+              launch('https://github.com/pd4d10/seti-flutter');
             },
           )
         ],

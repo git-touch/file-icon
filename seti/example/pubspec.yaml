@@ -25,6 +25,11 @@ dependencies:
   cupertino_icons: ^0.1.2
   seti:
     path: ../
+  url_launcher: ^5.1.4
+  url_launcher_web:
+    git:
+      url: git://github.com/flutter/plugins.git
+      path: packages/url_launcher/url_launcher_web
 
 dev_dependencies:
   flutter_test:
