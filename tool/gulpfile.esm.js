@@ -168,23 +168,6 @@ function generateCode() {
   fs.writeFileSync("../seti/lib/data.dart", code);
 }
 
-function copyLibToWeb() {
-  return gulp
-    .src("../seti/lib/**/*")
-    .pipe(
-      through2.obj((file, _, cb) => {
-        if (file.isBuffer()) {
-          file.contents = Buffer.from(
-            file.contents.toString().replace("fontPackage: 'seti',", ""),
-            "utf8"
-          );
-        }
-        cb(null, file);
-      })
-    )
-    .pipe(gulp.dest("../seti/example/lib/generated"));
-}
-
 export function watch(cb) {
   gulp.watch("../seti/lib/**/*", { ignoreInitial: false }, copyLibToWeb);
   cb();
@@ -193,6 +176,5 @@ export function watch(cb) {
 export default cb => {
   copyFont();
   generateCode();
-  copyLibToWeb();
   cb();
 };
