@@ -1,6 +1,6 @@
 import 'dart:html' as html;
 import 'package:flutter/material.dart';
-import 'generated/seti.dart';
+import 'package:seti/seti.dart';
 
 void main() => runApp(MyApp());
 
