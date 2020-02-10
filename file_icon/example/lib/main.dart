@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 void main() => runApp(MyApp());
 
-const title = 'Seti icons for Flutter';
+const title = 'File icon for Flutter';
 
 class MyApp extends StatelessWidget {
   @override
@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
           InkWell(
             child: FileIcon('.html', size: 32),
             onTap: () {
-              launch('https://github.com/pd4d10/seti-flutter');
+              launch('https://github.com/pd4d10/file-icon');
             },
           )
         ],

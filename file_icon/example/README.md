@@ -1,4 +1,4 @@
-# seti_gallery
+# file_icon_gallery
 
 A new Flutter project.
 
