@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:seti/seti.dart';
+import 'package:file_icon/file_icon.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() => runApp(MyApp());
@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(title),
         actions: <Widget>[
           InkWell(
-            child: SetiIcon('.html', size: 32),
+            child: FileIcon('.html', size: 32),
             onTap: () {
               launch('https://github.com/pd4d10/seti-flutter');
             },
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[SetiIcon(_input, size: _size)],
+                children: <Widget>[FileIcon(_input, size: _size)],
               ),
             ),
           ],

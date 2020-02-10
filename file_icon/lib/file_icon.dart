@@ -1,11 +1,11 @@
 import 'package:flutter/widgets.dart';
 import 'data.dart';
 
-class SetiIcon extends StatelessWidget {
+class FileIcon extends StatelessWidget {
   final String fileName;
   final double size;
 
-  SetiIcon(String fileName, {this.size})
+  FileIcon(String fileName, {this.size})
       : this.fileName = fileName.toLowerCase();
 
   @override

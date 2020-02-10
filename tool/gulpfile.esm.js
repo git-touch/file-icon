@@ -165,7 +165,7 @@ function generateCode() {
   // });
   // code += "};";
 
-  fs.writeFileSync("../seti/lib/data.dart", code);
+  fs.writeFileSync("../file_icon/lib/data.dart", code);
 }
 
 export default cb => {

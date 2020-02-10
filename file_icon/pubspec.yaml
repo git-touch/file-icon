@@ -1,5 +1,5 @@
-name: seti
-description: Seti file icons for different file types, auto detected by file name.
+name: file_icon
+description: File icons for different file types, auto detected by file name.
 version: 0.2.0
 author: Rongjian Zhang <pd4d10@gmail.com>
 homepage: https://github.com/pd4d10/seti-flutter
