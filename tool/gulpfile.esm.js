@@ -41,7 +41,7 @@ function convertColor(cssHex) {
 function copyFont() {
   return gulp
     .src("../vendor/seti-ui/styles/_fonts/seti/seti.ttf")
-    .pipe(gulp.dest("../seti/fonts"));
+    .pipe(gulp.dest("../file_icon/fonts"));
 }
 
 function generateCode() {
