@@ -1,1 +1,1 @@
-seti/README.md
+file_icon/README.md
