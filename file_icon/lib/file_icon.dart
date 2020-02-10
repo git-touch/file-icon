@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'data.dart';
+import 'src/data.dart';
 
 class FileIcon extends StatelessWidget {
   final String fileName;
