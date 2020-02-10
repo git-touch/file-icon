@@ -166,6 +166,7 @@ function generateCode() {
   // code += "};";
 
   fs.writeFileSync("../file_icon/lib/data.dart", code);
+  execSync("dartfmt --overwrite ../file_icon/**/*.dart");
 }
 
 export default cb => {
