@@ -11,10 +11,10 @@ jobs:
         with:
           channel: dev
       - run: flutter config --enable-web
-      - run: cd seti && flutter pub get
-      - run: cd seti/example && flutter build web
+      - run: cd file_icon && flutter pub get
+      - run: cd file_icon/example && flutter build web
       - uses: peaceiris/actions-gh-pages@v2.5.1
         env:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./seti/example/build/web
+          PUBLISH_DIR: ./file_icon/example/build/web

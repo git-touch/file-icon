@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Gallery",
-      "program": "seti/example/lib/main.dart",
+      "program": "file_icon/example/lib/main.dart",
       "request": "launch",
       "type": "dart"
     }
