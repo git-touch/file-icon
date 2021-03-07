@@ -1,6 +1,6 @@
 name: file_icon
 description: File icons for different file types, auto detected by file name.
-version: 0.3.0
+version: 1.0.0
 author: Rongjian Zhang <pd4d10@gmail.com>
 homepage: https://github.com/pd4d10/file-icon
 
