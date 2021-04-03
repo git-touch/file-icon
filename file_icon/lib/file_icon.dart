@@ -31,7 +31,7 @@ class FileIcon extends StatelessWidget {
     }
 
     return Icon(
-      IconData(
+      const IconData(
         iconSetMap[key].codePoint,
         fontFamily: 'Seti',
         fontPackage: 'file_icon',
