@@ -19,6 +19,9 @@ class MyWidget extends StatelessWidget {
 
       // Icon size
       size: 32,
+
+      // Override icon color
+      color: Colors.black,
     );
   }
 }
